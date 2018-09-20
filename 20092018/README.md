@@ -53,9 +53,6 @@ Yes I know, you found out the amazing power of pressing tab and having the auto-
 [Creating Environment variables: ](https://www.mkyong.com/java/how-to-set-java_home-on-windows-10/)
 
 
-## Exercises
-This module has a HackerRank challenge, you can check it on the following page: [www.hackerrank.com/elte-basicjava-module-1](http://www.hackerrank.com/elte-basicjava-module-1)
-
 
 ## Documentation regarding the examples:
 
