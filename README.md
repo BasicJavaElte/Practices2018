@@ -42,8 +42,8 @@ Even better, let's remember some stuff then...
 Any sort of plagiarism, copies, ideological falsehood  or unlawful behavior may be subject of auction in the format of the university regulations.
 
 #### Course grades
-* Challenges and class exercises (10%)
-* Final assignment (40%)
+* Challenges and class exercises (20%)
+* Final assignment (30%)
 * Exam (50%)
 
 * Accepted pull requests can count as extra points in all the activities with grades, being that these points will never compose more than 30% of the grade.
