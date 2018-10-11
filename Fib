@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+ 
+    public static void main(String[] args) {
+       int ind = 50;
+        long n = 0;
+        long m = 1;
+        for (long i = 0; i < ind; i++) {
+            System.out.print(m);
+            
+            if (i != ind - 1) {  
+                System.out.println();
+            }
+            
+            long tmp = m + n;
+            n = m;
+            m = tmp;
+        }
+    }
+}
