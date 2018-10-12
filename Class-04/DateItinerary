@@ -1,0 +1,64 @@
+// Date has our Date class, no doubts we need that
+	package dateM;
+	
+	import java.util.*;
+	import java.text.*;
+	
+	public class DateItinerary{
+		private Date current;
+		private Date goal;
+		private SimpleDateFormat SDF = new SimpleDateFormat("yyyy/mm/dd");
+
+	  // Let's create this as a private object, so that we can access along the class
+	  
+	  
+		public DateItinerary(Date current , Date goal){
+			this.current = current;
+			this.goal = goal;
+		}
+		public DateItinerary(String current,String goal) throws ParseException{
+			this.current = SDF.parse(current);
+			this.goal = SDF.parse(goal);
+			
+		}
+	  // Getters and Setters the way we learned
+		public void setCurrent(Date current){
+			this.current = current;
+		}
+		public void setGoal(Date goal){
+			this.goal = goal;
+		}
+
+		public Date getCurrent(){
+			return this.current;
+		}
+		public Date getGoal(){
+			return this.goal;
+		}
+		public boolean isInTheFuture(){
+			return this.goal.after(this.current); 
+		}
+		
+		public boolean isInThePast(){
+			return this.goal.before(this.current);
+		}
+
+	  @Override
+		public String toString(){
+
+			 if (isInTheFuture()){
+		   return "Traveling from "+SDF.format(this.current)
+
+					+" to "+SDF.format(this.goal)
+					+" we are traveling to the future";
+			 }else
+		
+			if(isInThePast()){
+				return "Traveling from "+SDF.format(this.current)
+					+" to "+SDF.format(this.goal)
+					+" we are traveling to the past";
+		 }else
+		//   // If it is not in the past either in the future? It is probably today =)
+				return "No trip on that";
+		}
+	}
