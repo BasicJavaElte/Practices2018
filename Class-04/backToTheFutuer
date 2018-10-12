@@ -1,0 +1,36 @@
+import dateM.DateItinerary;
+import java.util.*;
+import java.text.*;
+
+public class myMain{
+	
+	public static void main (String args[])throws ParseException{
+		
+		try{
+		DateItinerary d1 = new  DateItinerary("2017/10/01", "1990/02/01");
+		
+		System.out.println(d1.toString());
+		
+		}catch (ParseException e){
+			System.out.println("unparsable");
+		}
+		try{
+		DateItinerary d1 = new  DateItinerary( "1990/02/01","2017/10/01");
+		
+		System.out.println(d1.toString());
+		
+		}catch (ParseException e){
+			System.out.println("unparsable");
+		}
+		try{
+		DateItinerary d1 = new  DateItinerary("20171001", "1990/02/01");
+		
+		System.out.println(d1.toString());
+		
+		}catch (ParseException e){
+			System.out.println("unparsable");
+		}
+	}
+}
+
+	
