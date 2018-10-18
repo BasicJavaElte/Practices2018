@@ -1,6 +1,8 @@
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
+import models.Person;
+
 public class MyClass{
 	
 	public static void main (String args [])throws Exception{

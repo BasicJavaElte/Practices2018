@@ -1,3 +1,5 @@
+package models;
+
 //Import the Date package
 import java.util.Date;
 
