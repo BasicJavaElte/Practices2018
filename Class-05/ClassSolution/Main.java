@@ -10,7 +10,7 @@ public class Main{
 			
 			System.out.println("Select from list: "
 				+"\n 1- Add \n 2- Remove: \n 3- Sorted List"
-				+"0- exit" );
+				+"\n 0- exit" );
 			option = scanner.nextInt();
 			
 			switch(option){
@@ -19,9 +19,11 @@ public class Main{
 					break;
 					
 				case 2:
+					c.removeStudent();
 					break;
 					
-				case 3:					
+				case 3:	
+					c.listStudents();
 					break;	
 					
 				case 0:				

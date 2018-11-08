@@ -65,7 +65,7 @@ public class Student{
 	
 	@Override
 	public String toString(){
-		return " name "+name+ "\n familyName "+familyName ;
+		return "\n  Neptun: "+neptunCode+" Name "+name+ "  familyName "+familyName ;
 		
 		
 	}

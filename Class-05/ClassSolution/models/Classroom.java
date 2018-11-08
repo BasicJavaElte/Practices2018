@@ -13,30 +13,42 @@ public class Classroom{
 		students.add(s);
 	}
 	
+	public ArrayList<Student> getStudents(){
+		return this.students;
+	}
+	
 	// Return the index of the student according to Neptun code
-	public int findStudent(String neptun){
+	public int findStudentByNeptun(String neptun){
 		
 		for(int i=0; i<students.size(); i++){
 			Student s = students.get(i);
-			if (s.getNeptunCode() == neptun)
-				return i;
+			if (s.getNeptunCode().equalsIgnoreCase(neptun))
+				return i;			
 		}		
 		return -1;
 		
 	}
 	
-	/* Create a remove method that would go in 
-		every student and delete the student with th same neptun
+	public boolean removeStudent(String neptun){
 		
-		public [boolean/void] removeStudent(String neptun)		
-	*/
+		int index = findStudentByNeptun(neptun);
+		if(index<=0)
+			return false;
+
+		students.remove(index);
+		return true;
+		
+	}
+	public void SortStudents(){
+		// make a bubble sort of the students
+	}
 	
 	/* Print all students on a sorted list
 		Either create a new list, sort and print it 
 		or sort the current list by name
 		// I would use a bubble sort with set and get from ArrayList
 		
-		public void SortStudents();		
+			
 	*/
 	
 	/*

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 import models.Classroom;
 import models.Student;
@@ -14,14 +15,14 @@ public class Controller{
 	}	
 	
 	private void startClassroom(){
-		this.addStudent(new Student("Josh","sth","123"));
-		this.addStudent(new Student("Student","sth","234"));
-		this.addStudent(new Student("Josh Student","sth","345"));
-		this.addStudent(new Student("addStudent","sth","werwe"));
-		this.addStudent(new Student("classroom","sth","543f"));
-		this.addStudent(new Student("println","sth","ert345"));
-		this.addStudent(new Student("Inform","sth","456"));
-		this.addStudent(new Student("name","sth","789"));
+		classroom.addStudent(new Student("a","sth","123"));
+		classroom.addStudent(new Student("b","sth","234"));
+		classroom.addStudent(new Student("C","sth","345"));
+		classroom.addStudent(new Student("d","sth","werwe"));
+		classroom.addStudent(new Student("e","sth","543f"));
+		classroom.addStudent(new Student("f","sth","ert345"));
+		classroom.addStudent(new Student("g","sth","456"));
+		classroom.addStudent(new Student("h","sth","789"));
 	}
 	
 	public void addStudent(){
@@ -38,6 +39,25 @@ public class Controller{
 		//System.out.println(s);
 		
 		classroom.addStudent(s);
+	}
+	
+	public void removeStudent(){
+		System.out.println("Inform Neptun code");
+		String neptun = scanner.next();
+		
+		if(classroom.removeStudent(neptun)){
+			System.out.println("Student removed");
+		}else
+			System.out.println("Student not found");
+			
+	}
+	
+	public void listStudents(){
+		
+		ArrayList <Student> students = classroom.getStudents();
+		for(Student student : students){
+			System.out.println(student);
+		}
 	}
 	
 	
