@@ -15,12 +15,12 @@ public class Controller{
 	}	
 	
 	private void startClassroom(){
-		classroom.addStudent(new Student("a","sth","123"));
+		classroom.addStudent(new Student("e","sth","123"));
 		classroom.addStudent(new Student("b","sth","234"));
 		classroom.addStudent(new Student("C","sth","345"));
-		classroom.addStudent(new Student("d","sth","werwe"));
-		classroom.addStudent(new Student("e","sth","543f"));
-		classroom.addStudent(new Student("f","sth","ert345"));
+		classroom.addStudent(new Student("u","sth","werwe"));
+		classroom.addStudent(new Student("w","sth","543f"));
+		classroom.addStudent(new Student("y","sth","ert345"));
 		classroom.addStudent(new Student("g","sth","456"));
 		classroom.addStudent(new Student("h","sth","789"));
 	}
@@ -53,7 +53,7 @@ public class Controller{
 	}
 	
 	public void listStudents(){
-		
+		classroom.sortStudents();
 		ArrayList <Student> students = classroom.getStudents();
 		for(Student student : students){
 			System.out.println(student);

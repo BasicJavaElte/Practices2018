@@ -39,27 +39,29 @@ public class Classroom{
 		return true;
 		
 	}
-	public void SortStudents(){
+	
+	public void sortStudents(){
 		// make a bubble sort of the students
+		for(int i=0; i<students.size(); i++){
+			for (int j=i; j<students.size(); j++){
+				Student aux;
+				String name1 = students.get(i).getName();
+				String name2 = students.get(j).getName();
+				
+				if(name1.compareTo(name2)>0){
+					aux = students.get(i);
+					students.set(i, students.get(j));
+					students.set(j, aux);					
+				}				
+			}
+		}
+			
+	}
+	// return list of students that are in both classrooms
+	
+	
+	public ArrayList<Student> checkCommonStudents(Classroom classroom){
+		return classroom;
 	}
 	
-	/* Print all students on a sorted list
-		Either create a new list, sort and print it 
-		or sort the current list by name
-		// I would use a bubble sort with set and get from ArrayList
-		
-			
-	*/
-	
-	/*
-		Create a verify Classroom that would check the students
-		against the current by NeptunCode
-		
-		check if the student is enrolled in the current classroom
-		public boolean studentExists(String NeptunCode)
-		
-		verify one by one if the (this.student) students are enrolled in the second classroom
-		public checkCommonStudents(Classroom classroom)
-		
-	*/
 }
