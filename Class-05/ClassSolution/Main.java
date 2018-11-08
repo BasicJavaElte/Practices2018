@@ -19,18 +19,19 @@ public class Main{
 					break;
 					
 				case 2:
-					
 					break;
-				case 3:
 					
-					break;				
+				case 3:					
+					break;	
+					
 				case 0:				
 					break;
+					
 				default:
 					System.out.println("wrong option");
 			}
 			
-		}while(option!=0);
+		}while(option != 0);
 		
 	}
 }
