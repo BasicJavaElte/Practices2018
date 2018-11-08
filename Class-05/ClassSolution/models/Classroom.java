@@ -13,6 +13,18 @@ public class Classroom{
 		students.add(s);
 	}
 	
+	// Return the index of the student according to Neptun code
+	public int findStudent(String neptun){
+		
+		for(int i=0; i<students.size(); i++){
+			Student s = students.get(i);
+			if (s.getNeptunCode() == neptun)
+				return i;
+		}		
+		return -1;
+		
+	}
+	
 	/* Create a remove method that would go in 
 		every student and delete the student with th same neptun
 		
