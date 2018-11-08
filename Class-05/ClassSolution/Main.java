@@ -10,7 +10,7 @@ public class Main{
 			
 			System.out.println("Select from list: "
 				+"\n 1- Add \n 2- Remove: \n 3- Sorted List"
-				+"\n 0- exit" );
+				+"\n 4- Repeated students \n 0- exit" );
 			option = scanner.nextInt();
 			
 			switch(option){
@@ -25,6 +25,10 @@ public class Main{
 				case 3:	
 					c.listStudents();
 					break;	
+					
+				case 4:
+					c.listRepeatedStudents();
+					break;
 					
 				case 0:				
 					break;

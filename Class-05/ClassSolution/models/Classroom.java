@@ -61,7 +61,20 @@ public class Classroom{
 	
 	
 	public ArrayList<Student> checkCommonStudents(Classroom classroom){
-		return classroom;
-	}
+		ArrayList<Student> repeatedStudents = new ArrayList<Student>();
+		
+		for (Student student :students){
+			int index = 
+				classroom.findStudentByNeptun(student.getNeptunCode());
+				
+			if(index >= 0)
+				repeatedStudents.add(student);
+			
+		}
+		
+		return repeatedStudents;
+			
+		
+ 	}
 	
 }

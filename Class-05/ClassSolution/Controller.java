@@ -7,11 +7,13 @@ import models.Student;
 public class Controller{
 	Scanner scanner = new Scanner(System.in);
 	Classroom classroom;
-	
+	Classroom classroom2;
 	
 	public Controller(){
 		 classroom = new Classroom();
+		 classroom2 = new Classroom();
 		 startClassroom();
+		 startClassroom2();
 	}	
 	
 	private void startClassroom(){
@@ -23,6 +25,17 @@ public class Controller{
 		classroom.addStudent(new Student("y","sth","ert345"));
 		classroom.addStudent(new Student("g","sth","456"));
 		classroom.addStudent(new Student("h","sth","789"));
+	}
+	
+	private void startClassroom2(){
+		classroom2.addStudent(new Student("e","sth","123"));
+		classroom2.addStudent(new Student("b","sth","234"));
+		classroom2.addStudent(new Student("C","sth","erter"));
+		classroom2.addStudent(new Student("u","sth","sdfg"));
+		classroom2.addStudent(new Student("w","sth","twert"));
+		classroom2.addStudent(new Student("y","sth","345"));
+		classroom2.addStudent(new Student("g","sth","utr"));
+		classroom2.addStudent(new Student("h","sth","7546"));
 	}
 	
 	public void addStudent(){
@@ -55,6 +68,15 @@ public class Controller{
 	public void listStudents(){
 		classroom.sortStudents();
 		ArrayList <Student> students = classroom.getStudents();
+		for(Student student : students){
+			System.out.println(student);
+		}
+	}
+	
+	public void listRepeatedStudents(){
+		ArrayList <Student> students =
+			classroom.checkCommonStudents(classroom2);
+		
 		for(Student student : students){
 			System.out.println(student);
 		}
