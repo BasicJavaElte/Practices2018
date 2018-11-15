@@ -4,7 +4,7 @@ package models;
 //Import the Date package
 import java.util.Date;
 
-public class Person{	
+public abstract class Person{	
 	
 	//Attributes
 	private String name;
@@ -58,7 +58,7 @@ public class Person{
 	
 	@Override
 	public String toString(){
-		return "name "+name+ "\n familyName "+familyName ;
+		return "name "+name+ "\n familyName "+familyName+"\n";
 		
 		
 	}
