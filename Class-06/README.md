@@ -2,7 +2,6 @@
 
 ## We will cover today
 
-* We go through the main mistakes of the assignments
 * Play with Inheritance and specially the subclasses
 * Re-build class 4 examples using inheritance
 
