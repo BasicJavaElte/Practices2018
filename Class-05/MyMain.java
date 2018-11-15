@@ -9,30 +9,37 @@ import java.util.Scanner;
 public class MyMain{
 	
 	public static void main(String args[]) throws Exception{
+		
 		ArrayList<String> myStrings = new ArrayList<String>();
-		Scanner scanner = new Scanner (System.in);
-		
-		
+		Scanner scanner = new Scanner (System.in);				
 		int option=0;
+		
 		do{
-			System.out.println("Choose \n 1-add \n 2-List \n 3-Clean \n 4-Exit");
+			System.out.println("====Choose==== \n 1-add \n 2-List \n 3-Clean \n 4-Exit");
 			option = scanner.nextInt();
 			
 			if(option==1){
-				System.out.println("So please say a word");
 				
-				myStrings.add(scanner.next());
-				
+				System.out.println("So please say a word");				
+				myStrings.add(scanner.next());				
 				System.out.println("now we have "+myStrings.size()+" Strings");
-			}
+			
+			}else
 			if(option==2){
-				// list all the words here
-			}
+				if(myStrings.size()==0)
+					System.out.println("This list is empty sorry buddy");
+				
+				for(int i=0; i<myStrings.size(); i++){
+					System.out.println(myStrings.get(i));
+				}
+					
+			}else
 			if(option==3){
-				// Clean the list here
+				
+				myStrings.clear();
 			}
 			
-		}while(option!=3);
+		}while(option!=4);
 			
 	}
 	
