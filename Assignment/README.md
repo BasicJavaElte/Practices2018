@@ -18,7 +18,7 @@ The software shall implement the following items:
 * 5 - Register Beings
 * 6 - Register Products
 * 7 - Ruffle tickets
-* 8 - Register shop
+* 8 - Register sale
 * 9 - List winners
 
 
@@ -152,3 +152,4 @@ For this assignment we will use a different approach for grading that will work 
   * Oct 24th: Added prize tickets, Menu creation and Oompa Loompa song to the tasks
   * Nov 11th: Added beings registration, added products registration,  Ruffle tickets, Register shop.
   * Nov 11th: Extended feedback frame, added explanation of the scoring.
+  * Nov 26th: Eddited the name of the menu item from "Register shop" to "Register sale"
