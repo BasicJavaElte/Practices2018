@@ -24,7 +24,9 @@ The guys from the Picture are Pedro and Bino, they are waiting their delayed sal
 Your job Today is to create a software to register people and their information, there is another team working on the payment checks. They said any employee class which has implemented the functions bellow will work just fine for their system.
 
 double getGrossWage() // returning the gross salary
+
 String getDiscounts() // returning the discounts and descriptions
+
 double calculateNetWage() // returning the net wage.
 
 ![Pedro e Bino](http://cdn.naosalvo.com.br/2017/05/Carga-Pesada-1.jpg)
