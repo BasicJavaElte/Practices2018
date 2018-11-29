@@ -21,10 +21,7 @@
 
 The guys from the Picture are Pedro and Bino, they are waiting their delayed salary.
 
-All the errors should be handle, in this case and only today, you can print it out and say "Bino! This is a cilada"
-
-
-Your job is to create a software capable to register people and their information, there is another team working on the payment checks. They said that any employee class which has implemented the functions bellow will work just fine for their system.
+Your job Today is to create a software to register people and their information, there is another team working on the payment checks. They said any employee class which has implemented the functions bellow will work just fine for their system.
 
 double getGrossWage() // returning the gross salary
 String getDiscounts() // returning the discounts and descriptions
@@ -42,6 +39,8 @@ The Driver class should have the following methods:
 * setGottenFines (double fines) that is deduced from the driver's salary
 
 And of course, Driver must implement the payment check, you don't want them not getting paid.
+
+All the errors should be handle, in this case and only today, you can print it out and say "Bino! This is a cilada"
 
 ![Pedro e Bino](http://www.tvhistoria.com.br/images/upload/070916-cargapesada-imagem7.jpg)
 
