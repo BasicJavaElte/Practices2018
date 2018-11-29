@@ -44,6 +44,11 @@ All the errors should be handle, in this case and only today, you can print it o
 
 ![Pedro e Bino](http://www.tvhistoria.com.br/images/upload/070916-cargapesada-imagem7.jpg)
 
+### Summary:
+* Create a class Person (or not)
+* Create a class Driver
+* Create an Interface PaymentCheck
+
 
 ## Cool links
 [Interfaces (From Oracle)](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html)
