@@ -1,6 +1,6 @@
 package models;
 
-public class TravelTwoCities{
+public abstract class TravelTwoCities{
   private double speed;
   private double distance;
   private City cityOne;
@@ -14,7 +14,7 @@ public class TravelTwoCities{
   }
 
   public boolean sameTrip(TravelTwoCities ttc){
-    System.out.println(this.getCityTwo());
+    //System.out.println(this.getCityTwo());
     return (this.getCityOne().equals(ttc.getCityOne()) && this.getCityTwo().equals(ttc.getCityTwo()));
   }
 
